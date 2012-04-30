@@ -12,11 +12,12 @@ var Modules = {
   , github: require('./lib/modules/github')
   , instagram: require('./lib/modules/instagram')
   , google: require('./lib/modules/google')
+  , dotcloud: require('./lib/modules/dotcloud')
 };
 
 // Mostly, we need this because password needs to be loaded before everything else
 // so that other modules can use everyauth.password.loginKey()
-var moduleLoadOrder = ['everymodule', 'password', 'facebook', 'twitter', 'github', 'instagram', 'google'];
+var moduleLoadOrder = ['everymodule', 'password', 'facebook', 'twitter', 'github', 'instagram', 'google', 'dotcloud'];
 
 /**
  * Decorates the (User) Schema with the proper attributes.
